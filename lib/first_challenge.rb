@@ -21,7 +21,7 @@ contacts.each do |person, data|
       if flavor == "strawberry"
         value.delete_at(index)
     end
-  end 
+  end
 end
 
 
