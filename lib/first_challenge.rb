@@ -17,7 +17,7 @@ def first_challenge
   #your code here
 contacts["Freddy Mercury"][:favorite_icecream_flavors] = contacts["Freddy Mercury"][:favorite_icecream_flavors].map.with_index do |flavor, index|
     if flavor == "strawberry"
-      contacts["Freddy Mercury"][:favorite_icecream_flavors][index] == "raspberry"
+      contacts["Freddy Mercury"][:favorite_icecream_flavors].delete_at(index)
     else
       puts "not strawberry, instead #{flavor}"
     end
