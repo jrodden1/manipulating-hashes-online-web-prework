@@ -17,9 +17,11 @@ def first_challenge
 #alternate
 contacts.each do |person, data|
   data.each do |attribute, value|
-    value.map.with_index do |flavor, index|
-      if flavor == "strawberry"
-        value.delete_at(index)
+    if value.class == Array 
+      value.map.with_index do |flavor, index|
+        if flavor == "strawberry"
+          value.delete_at(index)
+        end
       end
     end
   end
