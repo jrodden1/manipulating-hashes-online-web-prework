@@ -14,7 +14,7 @@ def first_challenge
     }
   }
 
-#alternate
+#My Alternate Answer
 contacts.each do |person, data|
   data.each do |attribute, value|
     if value.class == Array
@@ -28,7 +28,7 @@ contacts.each do |person, data|
 end
 
 
-#My Alternate Answer
+#My Original Answer
 #  contacts["Freddy Mercury"][:favorite_icecream_flavors] = contacts["Freddy Mercury"][:favorite_icecream_flavors].map.with_index do |flavor, index|
 #      if flavor == "strawberry"
 #        contacts["Freddy Mercury"][:favorite_icecream_flavors][index] == "raspberry"
