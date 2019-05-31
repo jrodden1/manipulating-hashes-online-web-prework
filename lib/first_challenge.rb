@@ -14,6 +14,17 @@ def first_challenge
     }
   }
 
+#alternate
+contacts.each do |person, data|
+  data.each do |attribute, value|
+    value.each.with_index do |flavor, index|
+      if flavor == "strawberry"
+        value.delete_at(index)
+    end
+  end 
+end
+
+
   #your code here
 contacts["Freddy Mercury"][:favorite_icecream_flavors] = contacts["Freddy Mercury"][:favorite_icecream_flavors].map.with_index do |flavor, index|
     if flavor == "strawberry"
