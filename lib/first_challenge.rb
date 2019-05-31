@@ -28,7 +28,7 @@ contacts.each do |person, data|
 end
 
 
-    #your code here
+#My Alternate Answer
 #  contacts["Freddy Mercury"][:favorite_icecream_flavors] = contacts["Freddy Mercury"][:favorite_icecream_flavors].map.with_index do |flavor, index|
 #      if flavor == "strawberry"
 #        contacts["Freddy Mercury"][:favorite_icecream_flavors][index] == "raspberry"
