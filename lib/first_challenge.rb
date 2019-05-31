@@ -20,6 +20,7 @@ contacts.each do |person, data|
     value.map.with_index do |flavor, index|
       if flavor == "strawberry"
         value.delete_at(index)
+      end
     end
   end
 end
